@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Text
 %define		pnam	Trac
+%include	/usr/lib/rpm/macros.perl
 Summary:	Text::Trac - extension for formatting text with Trac Wiki Style
 Name:		perl-Text-Trac
 Version:	0.15
@@ -14,6 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	57757c5e9c742232b811af33b224357a
+URL:		http://search.cpan.org/dist/Text-Trac/
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Test-Base
