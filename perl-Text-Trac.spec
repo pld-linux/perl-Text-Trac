@@ -4,7 +4,6 @@
 
 %define		pdir	Text
 %define		pnam	Trac
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text::Trac - extension for formatting text with Trac Wiki Style
 Name:		perl-Text-Trac
 Version:	0.15
